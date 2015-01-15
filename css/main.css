@@ -19,3 +19,8 @@
 	z-index:99999;
   
 }
+
+.error{
+    color:RED;
+    display:none;
+}
