@@ -1,3 +1,6 @@
+// Validation.JS 
+// Validates form inputs and checks wether dates have been used via AJAX
+
 Validation = {
 	
 	validate_form : function(){
@@ -48,13 +51,15 @@ Validation = {
 			arrival  = $('.yearSelect_arrival option:selected').val()  + '-' + arrival_month + '-' + arrival_day,
 			checkout = $('.yearSelect_checkout option:selected').val()  + '-' + checkout_month + '-' + checkout_day;
 			
-		 $.get("http://localhost/PHPtestapplication/api/?type=reservation&arrival="+arrival+"&checkout="+checkout+"&hotelID="+hotel_id).done(function(data){
+		     $.get("http://localhost/PHPtestapplication/api/?type=reservation&arrival="+arrival+"&checkout="+checkout+"&hotelID="+hotel_id).done(function(data){
 		 		var response = JSON.parse(data.data);
-		 	if(response === false){
-				return true;		 	
-		 	}else{
-		 		return false;
-		 	}
+			 	if(response === false){
+					$('.error_dates').css('display','none');
+					Booking.submit_form();		 	
+			 	}else{
+			 		$('.error_dates').css('display','block');
+			 	}
+			 });
 	},
 
 	clean_date : function(input){
@@ -65,5 +70,9 @@ Validation = {
 		}else{
 			return input;
 		}
+	},
+
+	return_validation : function(reply){
+		return reply;
 	}
 }

@@ -1,292 +1,289 @@
 <div id='bookingMain'>
 	<div class='row'>
-
-	<div class='large-6 columns'>
-		<form>
-			<div class='row'>
-	<div class='small-12 medium-12 large-6 columns'>
-		<h5>Personal Details</h5>
-	</div>
-</div>
-		<div class='row'>
-			<div class='small-12 medium-12 large-6 columns'>
-				<label>First Name
-					<input type='text' name='fName'/>
-				</label>
+		<div class='large-6 columns'>
+			<form>
+				<div class='row'>
+					<div class='small-12 medium-12 large-6 columns'>
+						<h5>Personal Details</h5>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-6 columns'>
+						<label>First Name
+							<input type='text' name='fName'/>
+						</label>
+						<br/>
+						<small class='error_name error'>Invalid Name</small>
+					</div>
+					<div class='small-12 medium-12 large-6 columns'>
+						<label>Last Name
+							<input type='text' name='lName'/>
+						</label>
+						<br/>
+						<small class='error_surname error'>Invalid Surname</small>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-6 columns'>
+						<label>Email Address
+							<input type='email' name='email'/>
+						</label>
+						<br/>
+						<small class='error_email error'>Invalid Email</small>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-6 columns'>
+						<h5>Arrival Date</h5>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-3 columns'>
+						<label >Day :
+							<select class='daySelect_arrival'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+						</label>
+					</div>
+					<div class='small-12 medium-12 large-6 columns'>
+						<label class='monthSelect_arrival'>Month :
+							<select class='monthSelect_arrival'>
+								<option value='1'>
+									January
+								</option>
+								<option value='2'>
+									February
+								</option>
+								<option value='3'>
+									March
+								</option>
+								<option value='4'>
+									April
+								</option>
+								<option value='5'>
+									May
+								</option>
+								<option value='6'>
+									June
+								</option>
+								<option value='7'>
+									July
+								</option>
+								<option value='8'>
+									August
+								</option>
+								<option value='9'>
+									September
+								</option>
+								<option value='10'>
+									October
+								</option>
+								<option value='11'>
+									Novmber
+								</option>
+								<option value='12'>
+									December
+								</option>
+							</select>
+						</label>
+					</div>
+					<div class='small-12 medium-12 large-3 	columns'>
+						<label class='yearSelect_arrival'>Year
+							<select>
+								<option>
+									2015
+								</option>
+								<option>
+									2016
+								</option>
+								<option>
+									2017
+								</option>
+								<option>
+									2018
+								</option>
+								<option>
+									2019
+								</option>
+								<option>
+									2020
+								</option>
+								<option>
+									2021
+								</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-6 columns'>
+						<h5>Checkout Date</h5>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-3 columns'>
+						<label >Day :
+							<select class='daySelect_checkout'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+						</label>
+					</div>
+					<div class='small-12 medium-12 large-6 columns'>
+						<label>Month :
+							<select class='monthSelect_checkout'>
+								<option value='1'>
+									January
+								</option>
+								<option value='2'>
+									February
+								</option>
+								<option value='3'>
+									March
+								</option>
+								<option value='4'>
+									April
+								</option>
+								<option value='5'>
+									May
+								</option>
+								<option value='6'>
+									June
+								</option>
+								<option value='7'>
+									July
+								</option>
+								<option value='8'>
+									August
+								</option>
+								<option value='9'>
+									September
+								</option>
+								<option value='10'>
+									October
+								</option>
+								<option value='11'>
+									Novmber
+								</option>
+								<option value='12'>
+									December
+								</option>
+							</select>
+						</label>
+					</div>
+					<div class='small-12 medium-12 large-3 	columns'>
+						<label class='yearSelect_checkout'>Year
+							<select>
+								<option>
+									2015
+								</option>
+								<option>
+									2016
+								</option>
+								<option>
+									2017
+								</option>
+								<option>
+									2018
+								</option>
+								<option>
+									2019
+								</option>
+								<option>
+									2020
+								</option>
+								<option>
+									2021
+								</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<small class='error_dates error'>Dates for this venue are fully booked</small>
 				<br/>
-				<small class='error_name error'>Invalid Name</small>
-			</div>
-			<div class='small-12 medium-12 large-6 columns'>
-				<label>Last Name
-					<input type='text' name='lName'/>
-				</label>
-				<br/>
-				<small class='error_surname error'>Invalid Surname</small>
-			</div>
-		</div>
-
-		<div class='row'>
-			<div class='small-12 medium-12 large-6 columns'>
-				<label>Email Address
-					<input type='email' name='email'/>
-				</label>
-				<br/>
-				<small class='error_email error'>Invalid Email</small>
-			</div>
-		</div>
-<div class='row'>
-	<div class='small-12 medium-12 large-6 columns'>
-		<h5>Arrival Date</h5>
-	</div>
-</div>
-		<div class='row'>
-			<div class='small-12 medium-12 large-3 columns'>
-				<label >Day :
-					<select class='daySelect_arrival'>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-						<option>13</option>
-						<option>14</option>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-						<option>20</option>
-						<option>21</option>
-						<option>22</option>
-						<option>23</option>
-						<option>24</option>
-						<option>25</option>
-						<option>26</option>
-						<option>27</option>
-						<option>28</option>
-						<option>29</option>
-						<option>30</option>
-						<option>31</option>
-					</select>
-				</label>	
-			</div>
-			<div class='small-12 medium-12 large-6 columns'>
-				<label class='monthSelect_arrival'>Month :
-						<select class='monthSelect_arrival'>
-						<option value='1'>
-							January
-						</option>
-						<option value='2'>
-							February
-						</option>
-						<option value='3'>
-							March
-						</option>
-						<option value='4'>
-							April
-						</option>
-						<option value='5'>
-							May
-						</option>
-						<option value='6'>
-							June
-						</option>
-						<option value='7'>
-							July
-						</option>
-						<option value='8'>
-							August
-						</option>
-						<option value='9'>
-							September
-						</option>
-						<option value='10'>
-							October
-						</option>
-						<option value='11'>
-							Novmber
-						</option>
-						<option value='12'>
-							December
-						</option>
-					</select>
-				</label>
-			</div>
-			<div class='small-12 medium-12 large-3 	columns'>
-				<label class='yearSelect_arrival'>Year
-					<select>
-						<option>
-							2015
-						</option>
-						<option>
-							2016
-						</option>
-						<option>
-							2017
-						</option>
-						<option>
-							2018
-						</option>
-						<option>
-							2019
-						</option>
-						<option>
-							2020
-						</option>
-						<option>
-							2021
-						</option>
-					</select>
-				</label>
-			</div>
-		</div>
-<div class='row'>
-	<div class='small-12 medium-12 large-6 columns'>
-		<h5>Checkout Date</h5>
-	</div>
-</div>
-		<div class='row'>
-			<div class='small-12 medium-12 large-3 columns'>
-				<label >Day :
-					<select class='daySelect_checkout'>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-						<option>13</option>
-						<option>14</option>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-						<option>20</option>
-						<option>21</option>
-						<option>22</option>
-						<option>23</option>
-						<option>24</option>
-						<option>25</option>
-						<option>26</option>
-						<option>27</option>
-						<option>28</option>
-						<option>29</option>
-						<option>30</option>
-						<option>31</option>
-					</select>
-				</label>	
-			</div>
-			<div class='small-12 medium-12 large-6 columns'>
-				<label>Month :
-					<select class='monthSelect_checkout'>
-						<option value='1'>
-							January
-						</option>
-						<option value='2'>
-							February
-						</option>
-						<option value='3'>
-							March
-						</option>
-						<option value='4'>
-							April
-						</option>
-						<option value='5'>
-							May
-						</option>
-						<option value='6'>
-							June
-						</option>
-						<option value='7'>
-							July
-						</option>
-						<option value='8'>
-							August
-						</option>
-						<option value='9'>
-							September
-						</option>
-						<option value='10'>
-							October
-						</option>
-						<option value='11'>
-							Novmber
-						</option>
-						<option value='12'>
-							December
-						</option>
-					</select>
-				</label>
-			</div>
-			<div class='small-12 medium-12 large-3 	columns'>
-				<label class='yearSelect_checkout'>Year
-					<select>
-						<option>
-							2015
-						</option>
-						<option>
-							2016
-						</option>
-						<option>
-							2017
-						</option>
-						<option>
-							2018
-						</option>
-						<option>
-							2019
-						</option>
-						<option>
-							2020
-						</option>
-						<option>
-							2021
-						</option>
-					</select>
-				</label>
-			</div>
-		</div>
-<small class='error_dates error'>Dates for this venue are fully booked</small>
-<br/>
-<div class='small-12 medium-12 large-6 columns'>
-		<h5>Resort</h5>
-	</div>
-		<div class='row'>
-			<div class='small-12 medium-12 large-12 columns'>
+				<div class='small-12 medium-12 large-6 columns'>
+					<h5>Resort</h5>
+				</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-12 columns'>
+						
+						<select class='resort'>
+							<option>
+							</option>
+						</select>
+						
+					</div>
+				</div>
 				
-					<select class='resort'>
-						<option>
-						</option>
-					</select>
-				
-			</div>
+				<div class='row'>
+					<div class='small-12 medium-12 large-12 columns'>
+						<button class='submit'>Submit</button>
+					</div>
+					<small class='successLabel' style='color:GREEN; display:none'>Your Booking is now complete!!</small>
+				</div>
+			</form>
 		</div>
-	
-		<div class='row'>
-			<div class='small-12 medium-12 large-12 columns'>
-				<button class='submit'>Submit</button>
-			</div>
+		<div class='large-6 columns'>
+			<img class='preview' src='./img/1.jpg'>
 		</div>
-	</form>
-	</div>
-<div class='large-6 columns'>
-		<img class='preview' src='./img/1.jpg'>
 	</div>
 </div>
-
-</div>	
-
